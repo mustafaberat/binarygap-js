@@ -2,7 +2,6 @@
 
 ## Screenshot
 ![Screenshot of web](https://github.com/mustafaberat/binarygap-js/blob/master/src/assets/screenshot.PNG)
-![Screenshot of mobile](https://github.com/mustafaberat/binarygap-js/blob/master/src/assets/screenshot-mobile.jpeg)
 
 **Solution:** [Solution](https://binarygap-js.now.sh/)
 
