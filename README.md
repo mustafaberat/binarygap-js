@@ -3,8 +3,8 @@
 ## Screenshot
 ![Screenshot of web](https://github.com/mustafaberat/binarygap-js/blob/master/src/assets/screenshot.PNG)
 
-## Solution
-[Solution](https://binarygap-js.now.sh/)
+**Website link:** [Solution](https://binarygap-js.now.sh/)
+**Solution function:** 'LargestGap' function in (https://github.com/mustafaberat/binarygap-js/blob/master/src/components/Home.vue)
 
 ## Problem
 A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
