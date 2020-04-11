@@ -1,40 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;700&display=swap');
-$dark: #1D7D43;
-$light: #D7FF8A;
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;700&display=swap");
+$purple: #e869ff;
+$dark: #231026;
 
-body,html{background-color: $dark;}
+body,
+html {
+  background-color: $dark;
+}
 
-.container{
-    font-family: 'Baloo Paaji 2', cursive;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    & .problem{
-        margin-top: 50px;
-        background-color: rgba($color: #D7FF8A, $alpha: 0.5);
-        & .problem-title{
-
-        }
-        & .problem-desc{
-            
-        }
+.container {
+  font-family: "Baloo Paaji 2", cursive;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $purple;
+  & .problem {
+    margin-top: 50px;
+    & .problem-title {
+      margin: 30px;
+      margin-bottom: 0px;
     }
-    
-    & main{
+    & .problem-desc {
+      margin: 30px;
+      margin-top: 0px;
+    }
+    & .ref {
+      margin-left: auto;
+      color: $dark;
+      background-color: $purple;
+      padding: 4px 12px;
+      position: absolute;
+      right: 0%;
+    }
+  }
+
+  & main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .enter-title {
+      text-align: center;
+      color: white;
+    }
+    & .span {
+      color: white;
+    }
+    & .inputAndBtn {
+      width: 100%;
+      input {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: bold;
         text-align: center;
-        .enter-title{
-            text-align: center;
-        }
-        input{
-            display: flex;
-            width: 100%;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-align: center;
-        }
+        background-color: $dark;
+        color: $purple;
+        height: 30px;
+        font-size: 1.4rem;
+        border: 2px solid $purple;
+        margin-right: 10px;
+        border-radius: 4px;
+      }
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
 
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+      ::placeholder {
+        color: $purple;
+      }
+      & .btn {
+        border-radius: 4px;
+        background-color: inherit;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 10px 50px;
+        width: 100%;
+        margin-top: 10px;
+      }
     }
+  }
+}
+
+[v-cloak] {
+  display: none;
 }
