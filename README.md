@@ -4,6 +4,7 @@
 ![Screenshot of web](https://github.com/mustafaberat/binarygap-js/blob/master/src/assets/screenshot.PNG)
 
 **Website link:** [Solution](https://binarygap-js.now.sh/)
+
 **Solution function:** 'LargestGap' function in (https://github.com/mustafaberat/binarygap-js/blob/master/src/components/Home.vue)
 
 ## Problem
