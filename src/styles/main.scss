@@ -14,7 +14,7 @@ html {
   margin-right: auto;
   color: $purple;
   & .problem {
-    margin-top: 50px;
+    margin-top: 20px;
     & .problem-title {
       margin: 30px;
       margin-bottom: 0px;
@@ -47,14 +47,15 @@ html {
     }
     input {
       display: flex;
-      width: 100%;
+      width: 95%;
+      margin-left: 10px;
+      margin-right: 10px;
       font-size: 1.2rem;
       font-weight: bold;
       text-align: center;
       background-color: $dark;
       color: white;
       height: 30px;
-      font-size: 1.4rem;
       border: 2px solid $purple;
       margin-right: 10px;
       border-radius: 4px;
@@ -83,5 +84,26 @@ html {
       width: 100%;
       margin-top: 10px;
     }
+  }
+}
+
+@media (max-width: 515px) {
+  .enter-title,
+  .results {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .enter-title,
+  .results {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .enter-title,
+  .results {
+    font-size: 1.4rem;
   }
 }

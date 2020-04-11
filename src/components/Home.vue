@@ -10,13 +10,13 @@
         placeholder="Enter your number"
       />
       <div v-if="binaryNumber !== ''">
-        <h1>
+        <h1 class="results">
           Input: <span class="span">{{ number }}</span>
         </h1>
-        <h1>
+        <h1 class="results">
           Converting Binary: <span class="span">{{ binaryNumber }}</span>
         </h1>
-        <h1>
+        <h1 class="results">
           Binary Gap Solution: <span class="span">{{ gapnumber }}</span>
         </h1>
       </div>
