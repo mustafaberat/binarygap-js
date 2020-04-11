@@ -2,26 +2,21 @@
   <div class="container">
     <main>
       <h1 class="enter-title">Binary Gap Solution with JS</h1>
-      <div class="inputAndBtn">
-        <input
-          type="number"
-          name="number"
-          v-model="number"
-          @change="largestGap"
-          placeholder="Enter your number"
-        />
-        <button v-if="number !== ''" @click="largestGap" class="btn">
-          Click Me & Press Enter
-        </button>
-      </div>
-      <div v-cloak>
-        <h1 v-cloak>
+      <input
+        type="number"
+        name="number"
+        v-model="number"
+        @keyup="largestGap"
+        placeholder="Enter your number"
+      />
+      <div v-if="binaryNumber !== ''">
+        <h1>
           Input: <span class="span">{{ number }}</span>
         </h1>
-        <h1 v-cloak>
+        <h1>
           Converting Binary: <span class="span">{{ binaryNumber }}</span>
         </h1>
-        <h1 v-cloak>
+        <h1>
           Binary Gap Solution: <span class="span">{{ gapnumber }}</span>
         </h1>
       </div>
@@ -58,8 +53,8 @@ export default {
   name: "Home",
   data() {
     return {
-      binaryNumber: String,
-      gapnumber: Number,
+      binaryNumber: "",
+      gapnumber: 0,
       number: ""
     };
   },
