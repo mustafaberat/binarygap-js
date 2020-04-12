@@ -60,7 +60,6 @@ export default {
   },
   methods: {
     largestGap() {
-      console.log("in");
       this.binaryNumber = Math.abs(this.number).toString(2);
       let finalMax = 0,
         currentMax = 0;
